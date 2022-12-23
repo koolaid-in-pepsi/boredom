@@ -17,12 +17,12 @@ local Video = Instance.new('VideoFrame')
 local getasset = syn and getsynasset or getcustomasset
 
 if getasset then
-    if not isfile('azumanga_daioh.webm') then
+    if not isfile('music-video-players_azumanga-daioh_azumanga_daioh.webm') then
         print('downloading video file...')
-        writefile('azumanga_daioh.webm',game:HttpGet('https://github.com/koolaid-in-pepsi/j/raw/main/music-video-players/azumanga-daioh/azumanga_daioh.webm'))
-        repeat task.wait() until isfile('azumanga_daioh.webm') --https://github.com/Dalk21/roblox-scripting/raw/main/music-video-players/bad-apple/bad_apple.webm
+        writefile('music-video-players_azumanga-daioh_azumanga_daioh.webm',game:HttpGet('https://github.com/koolaid-in-pepsi/boredom/raw/main/music-video-players/azumanga-daioh/azumanga_daioh.webm'))
+        repeat task.wait() until isfile('music-video-players_azumanga-daioh_azumanga_daioh.webm') --https://github.com/Dalk21/roblox-scripting/raw/main/music-video-players/bad-apple/bad_apple.webm
     end
-    repeat pcall(function() Video.Video = getasset('azumanga_daioh.webm') end) until pcall(function() Video.Video = getasset('azumanga_daioh.webm') end)
+    repeat pcall(function() Video.Video = getasset('music-video-players_azumanga-daioh_azumanga_daioh.webm') end) until pcall(function() Video.Video = getasset('music-video-players_azumanga-daioh_azumanga_daioh.webm') end)
 end
 
 --Properties:
@@ -174,5 +174,5 @@ local function NSAJXEI_fake_script() -- Re.Res
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Video.TimePosition = 0
 	end)
-enda
+end
 coroutine.wrap(NSAJXEI_fake_script)()
